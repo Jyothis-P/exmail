@@ -7,7 +7,7 @@
   
   Install the required modules.
     open the command prompt and type
-      >pip install xlrd
+      > pip install xlrd
 
 Sending automated mails.
   Make sure all the requirements are satisfied.
