@@ -3,17 +3,18 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
+from excel_read import pas_lst
 
 
-def mail(mail_id, name, type='partners', filename='puppy.png'):
+def mail(name, mail_id, type='partners', filename='Dhishna.pdf'):
     print(name, ' | ', mail_id)
     email_send = mail_id
-    email_user = 'HR Dhishna'
+    email_user = 'hr@dhishna.org'
 
     subject = 'Sponsorship Proposal | Dhishna 2020'
 
     msg = MIMEMultipart()
-    msg['From'] = email_user
+    msg['From'] = "Dhishna HR <{}>".format(email_user)
     msg['To'] = email_send
     msg['Subject'] = subject
 
@@ -43,8 +44,8 @@ Ph - +91 8921397119
 
 
 H Vishnu Das
-Sponsorship Head -Dhishna 2020
-Ph - +91 90487 11970
+Sponsorship Head - Dhishna 2020
+Ph - +91 9048711970
 
 '''.format(name, type)
 
@@ -68,7 +69,6 @@ Ph - +91 90487 11970
 
 
 if __name__ == '__main__':
-    email_password = "jWwxQMR2i2ES"
     email_user = 'hr@dhishna.org'
     print('Setting up server')
     # server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -76,6 +76,8 @@ if __name__ == '__main__':
     server.starttls()
     print('Logging in')
     server.login(email_user, email_password)
-    mail('jyothisp52@gmail.com', 'Pepsico', "'Refreshment partners'")
-    mail('alexsaby7@gmail.com', 'Pepsico', "'Refreshment partners'")
+    print('********************************************************')
+    company_list = pas_lst()
+    for company in company_list:
+        mail(*company)
     server.quit()

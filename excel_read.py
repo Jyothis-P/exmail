@@ -13,7 +13,10 @@ def pas_lst():
 
     l = []
     for i in range(total_row):
-        l.append((worksheet.cell(i, 0).value, worksheet.cell(i, 1).value))
+        if worksheet.cell(i, 2).value == '':
+            l.append((worksheet.cell(i, 0).value, worksheet.cell(i, 1).value))
+        else:
+            l.append((worksheet.cell(i, 0).value, worksheet.cell(i, 1).value, worksheet.cell(i, 2).value))
 
     return (l)
 
