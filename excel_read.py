@@ -11,7 +11,6 @@ def pas_lst():
     total_row = worksheet.nrows
     total_col = worksheet.ncols
 
-
     l = []
     for i in range(total_row):
         l.append((worksheet.cell(i, 0).value, worksheet.cell(i, 1).value))
@@ -19,4 +18,5 @@ def pas_lst():
     return (l)
 
 
-print(pas_lst())
+if __name__ == '__main__':
+    print(pas_lst())
