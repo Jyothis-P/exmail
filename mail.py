@@ -49,7 +49,7 @@ Ph - +91 9048711970
 
 '''.format(name, type)
 
-    body = 'Hey there, this is mail to test for automatic mailing. Kindly ignore this message. For any enquiries, contact mail@jyothisp.co' + body
+    # body = 'Hey there, this is mail to test for automatic mailing. Kindly ignore this message. For any enquiries, contact mail@jyothisp.co' + body
     print('--Attaching files.')
     msg.attach(MIMEText(body, 'plain'))
 
@@ -69,7 +69,7 @@ Ph - +91 9048711970
 
 
 if __name__ == '__main__':
-    email_password = "enter password here."
+    email_password = "Enter your password"
     email_user = 'hr@dhishna.org'
     print('Setting up server')
     # server = smtplib.SMTP('smtp.gmail.com', 587)
