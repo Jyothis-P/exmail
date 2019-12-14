@@ -17,6 +17,8 @@
     Company name | Email ID | Type of partners (optional)
     for example  
     Pepsico | mail@pepsi.co | Refreshment Partners
-### Once you have edited the sheet, run the file, mail.py.
+### Once you have edited the sheet, edit the file mail.py.
+    find the line that says enter your password and enter your app password.(Not your usual password. Contact the developer.)\
+### Run mail.py
   
 ### Sit back, and grab a cup of coffee.
