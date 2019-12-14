@@ -3,8 +3,9 @@
 ## Requirements.
 
 
-
+```diff
 - While installing python, make sure that you select the "Add to PATH" option or something similar.
+```
 
 ### Install python. (https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe for windows.)
     If the above link doesn't work, visit https://www.python.org/downloads/windows/
