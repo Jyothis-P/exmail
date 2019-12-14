@@ -69,6 +69,7 @@ Ph - +91 9048711970
 
 
 if __name__ == '__main__':
+    email_password = "enter password here."
     email_user = 'hr@dhishna.org'
     print('Setting up server')
     # server = smtplib.SMTP('smtp.gmail.com', 587)
