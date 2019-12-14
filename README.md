@@ -1,13 +1,13 @@
 # Send automated emails to companies.
 
-Requirements.
+#Requirements.
   Install python. (https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe for windows.)
     If the above link doesn't work, visit https://www.python.org/downloads/windows/
     While installing, make sure that you select the "Add to PATH" option or something similar.
   
   Install the required modules.
     open the command prompt and type
-      pip install xlrd
+      >pip install xlrd
 
 Sending automated mails.
   Make sure all the requirements are satisfied.
